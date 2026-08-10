@@ -1,0 +1,573 @@
+
+body{
+    background-color: #f8f9fa;
+}
+
+/* rating starts */
+.rating-stars {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    clear: both;
+}
+.rating-stars li.stars-active {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.rating-stars li {
+    display: block;
+    text-overflow: clip;
+    white-space: nowrap;
+    z-index: 1;
+}
+.rating-stars img {
+    height: 14px;
+    max-width: none;
+}
+.label-rating {
+    margin-left: 7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rating-stars li.stars-active i {
+    color: orange;
+}
+.rating-stars li a:hover {
+    text-decoration: none;
+}
+.rating-stars i {
+    font-size: 14px;
+    color: #ccc;
+    display: inline;
+}
+/* rating ends */
+    
+.card-spinner{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000042;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip {
+    z-index: 100000000; 
+}
+/* .text-truncate {
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+} */
+.page-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* PRELOADER CSS */
+.page-loader{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background: #fff;
+	z-index: 999999;
+	
+}
+.page-loader .txt{
+    color: #666;
+    text-align: center;
+    top: 40%;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    line-height: 1.5;
+}
+/* SPINNER ANIMATION */
+.spinner {
+	position: relative;
+	top: 35%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #ffc107;
+
+    border-radius: 100%;  
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.razorpay-payment-button {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    display: block;
+    width: 100%;
+    border-radius: .25rem !important;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.razorpay-payment-button:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+    text-decoration: none;
+}
+.razorpay-payment-button:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.razorpay-payment-button {
+    border-radius: 300px;
+    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    letter-spacing: 2px;
+}
+.modal{
+    z-index: 9999;
+}
+section.contact ul.list-social li.social-whatsapp a {
+    background-color: #3db94e;
+}
+[data-letters]:before {
+    content: attr(data-letters);
+    display: inline-block;
+    /* font-size: 2em; */
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 50%;
+    background: #007bff;
+    vertical-align: middle;
+    color: white;
+    text-transform: capitalize;
+}
+.carousel-caption {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-banner {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0.37rem;
+}
+
+.card-banner .img-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    max-width: 100%;
+}
+.card-banner .caption {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    padding: 1.25rem;
+    color: #fff;
+}
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+}
+
+.ab-content-img {
+    /* background: url(https://demo.w3layouts.com/demos_new/template_demo/29-05-2019/baggage_demo_Free/379113341/web/images/banner1.jpg) no-repeat center; */
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 27em;
+}
+.border-bottom-only{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+#wrapper #content-wrapper #content {
+    flex: 1 0 auto;
+}
+
+/* single product page starts */
+.gallery-wrap .img-big-wrap {
+    margin-bottom: 10px;
+    border-radius: 0.37rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+.gallery-wrap .img-big-wrap a {
+    text-align: center;
+    display: block;
+}
+.gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+.gallery-wrap .thumbs-wrap {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gallery-wrap .thumbs-wrap .item-thumb {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 3px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gallery-wrap .thumbs-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+.content-body {
+    flex: 1 1 auto;
+    padding: 2rem 2.3rem;
+}
+
+.input-spinner {
+    width: 125px;
+    flex-wrap: nowrap;
+    display: inline-flex;
+    vertical-align: middle;
+}
+.input-spinner .btn {
+    width: 42px;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.input-spinner input.form-control {
+    text-align: center;
+    max-width: 46px;
+    font-weight: bold;
+    flex-basis: 46px;
+    border-color: #e4e4e4;
+    flex-grow: 0;
+}
+/* single product page ends */
+.price-old {
+    color: #969696;
+    margin-left: 3px;
+    font-size: 85%;
+}
+.itemside .aside {
+    position: relative;
+    flex-shrink: 0;
+}
+.card-product-list .img-wrap {
+    height: 220px;
+    border-radius: 0.37rem 0 0 0.37rem;
+}
+[class*="card-product"] .img-wrap img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    display: inline-block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+section.divider .overlay {
+    background: rgba(0,0,0,0.7);
+    padding: 100px 0;
+}
+section.divider .overlay h2, section.divider .overlay h3 {
+    color: #fff;
+    letter-spacing: 0.05em;
+}
+section.divider .overlay h3 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+section.divider {
+    padding: 0;
+    background-size: cover !important;
+}
+.section-heading {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.notify {
+    position: absolute;
+    padding: 0.4em 0.8em;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 3rem;
+    color: #fff;
+    background-color: #fa3434;
+    top: 15%;
+    /* right: -5%; */
+}
+.box {
+    padding: 18px;
+    background: #fff;
+    border-radius: 0.37rem;
+    border: 1px solid #e4e4e4;
+}
+.icontext {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.icontext .icon {
+    position: relative;
+    margin-right: 10px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.icontext .text {
+    width: 100%;
+    line-height: 1.2;
+}
+
+.single-banner {
+    position: relative;
+    overflow: hidden;
+}
+.single-banner a img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-banner .banner-position-hm15-2 {
+    position: absolute;
+    left: 40px;
+    top: 45px;
+}
+.single-banner .banner-content-4.pink-banner span {
+    color: #ed59a0;
+}
+.single-banner .banner-content-4 span {
+    font-size: 18px;
+    color: #6eab49;
+}
+.single-banner .banner-content-4.pink-banner h2 {
+    color: #ed59a0;
+}
+.single-banner .banner-content-4 h2 {
+    font-size: 55px;
+    color: #f3993f;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 15px 0 15px;
+}
+.single-banner .banner-content-4 h5 {
+    font-size: 24px;
+    color: #000000;
+    line-height: 1;
+    margin: 0 0 36px;
+    letter-spacing: 4.3px;
+}
+/* .single-banner .banner-content-4 > a {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 13px 33px 13px;
+    background-color: #6eab49;
+}
+.single-banner .banner-content-4.pink-banner > a {
+    background-color: #ed59a0;
+} */
+.single-banner:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.single-banner .banner-position-hm15-2 {
+    position: absolute;
+    left: 40px;
+    top: 45px;
+}
+.single-banner .banner-content-3 h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+    line-height: 1;
+    color: #111111;
+    text-transform: uppercase;
+}
+.single-banner .banner-content-3.pink-banner p {
+    color: #010101;
+}
+.single-banner .banner-content-3 p {
+    font-size: 18px;
+    margin: 11px 0 20px;
+    color: #010101;
+}
+/* .single-banner .banner-content-3.pink-banner > a {
+    border: 2px solid #ed59a0;
+    color: #ed59a0;
+} */
+.single-banner .banner-content-3 > a {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    border: 2px solid #ffc107;
+    color: #ffc107;
+    /* font-size: 14px; */
+    display: inline-block;
+    text-align: center;
+}
+.single-banner .banner-position-hm17-1 {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    padding: 20px;
+}
+
+.icon-md {
+    width: 60px;
+    height: 60px;
+    line-height: 60px !important;
+    font-size: 28px;
+}
+.icon-xs, .icon-sm, .icon-md, .icon-lg {
+    display: inline-block;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: #000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.banner-imgs{
+    opacity: 0.5;object-fit:cover;height:75vh
+}
+button,a, button:active,a:active, button:focus,a:focus {
+    outline: none;
+}
+
+@media (max-width: 992px) {
+    .carousel-caption h1{
+        font-size: larger;
+    }
+    .carousel-caption h3{
+        font-size: medium;
+    }   
+    .banner-imgs{
+        height:100%;
+    }
+    section {
+        padding: 50px 0;
+    }
+}
+
+/* The mobile side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 300px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: -300px;
+    background-color: #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+/* .sidenav a:hover {
+    color: #575757;
+} */
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 15px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+} 

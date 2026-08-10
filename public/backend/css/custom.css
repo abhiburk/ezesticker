@@ -1,0 +1,23 @@
+/* select2 start */
+.select2-selection--single .select2-selection__rendered {
+    line-height: 35px !important;
+}
+.select2-selection {
+    height: 38px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    margin-top: 2px !important;
+}
+
+.select2-selection__clear{
+    height: 33px !important;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ced4da !important;
+}
+/* select2 end */
+
+/* ckeditor starts */
+.ck-editor__editable {
+    height: 400px;
+}
