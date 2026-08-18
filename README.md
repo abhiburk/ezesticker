@@ -5,8 +5,7 @@ eZeSticker.com was created to solve real-world problems with the innovative use 
 ---
 
 # eZeSticker.com: Smart Stickers for a Smarter World
-![Screenshots](![Google Test Image](https://drive.google.com/uc?export=view&id=18h8kFxj1GciLEsvGMipzgo_hvRgJaR3S)
-)
+![Screenshots 1](https://drive.google.com/u/0/drive-viewer/AKGpihYCY6HXjnX6Oh-WDj7lERnx9xiPnXqo_WIz2gFuiTMdS_5s_9m4IuYn04PBM7laYwgWyP4OamdUZvwz9xHgD0xDIl-x_LFVDsU=s1600-rw-v1?auditContext=forDisplay)
 ---
 
 ## About the Project
