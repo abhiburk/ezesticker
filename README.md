@@ -4,6 +4,17 @@ eZeSticker.com was created to solve real-world problems with the innovative use 
 
 ---
 
+# Previews
+
+![Screenshot 1](./public/screenshots/Screenshot%202026-08-18%20at%2010.27.00 AM.png)
+![Screenshot 2](./public/screenshots/Screenshot%202026-08-18%20at%2010.27.41 AM.png)
+![Screenshot 3](./public/screenshots/Screenshot%202026-08-18%20at%2010.29.27 AM.png)
+![Screenshot 4](./public/screenshots/Screenshot%202026-08-18%20at%2010.30.05 AM.png)
+![Screenshot 5](./public/screenshots/Screenshot%202026-08-18%20at%2010.45.45 AM.png)
+![Screenshot 6](./public/screenshots/Screenshot%202026-08-18%20at%2010.46.01 AM.png)
+![Screenshot 7](./public/screenshots/Screenshot%202026-08-18%20at%2010.46.37 AM.png)
+---
+
 ## About the Project
 
 ### The Concept  

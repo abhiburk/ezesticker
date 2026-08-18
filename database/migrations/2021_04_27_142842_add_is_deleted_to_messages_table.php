@@ -14,7 +14,7 @@ class AddIsDeletedToMessagesTable extends Migration
     public function up()
     {
         Schema::table('messages', function (Blueprint $table) {
-            $table->text('is_deleted')->after('read_at')->default(0);
+            $table->boolean('is_deleted')->after('read_at')->default(0);
         });
     }
 

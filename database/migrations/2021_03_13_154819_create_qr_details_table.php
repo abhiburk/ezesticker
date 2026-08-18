@@ -17,7 +17,7 @@ class CreateQrDetailsTable extends Migration
             $table->id();
             $table->integer('user_id')->nullable();
             $table->integer('qr_code_id')->nullable();
-            $table->text('message')->default('Hello, In case of any any emergency please contact my mobile number.');
+            $table->text('message')->nullable();
             $table->string('blood_group')->nullable();
             $table->string('emergency_phone')->nullable();
             $table->timestamp('emergency_phone_verified_at')->nullable();
